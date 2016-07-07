@@ -1,0 +1,41 @@
+<stix:STIX_Package 
+	xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
+	xmlns:example="http://example.com"
+	xmlns:indicator="http://stix.mitre.org/Indicator-2"
+	xmlns:stix="http://stix.mitre.org/stix-1"
+	xmlns:stixCommon="http://stix.mitre.org/common-1"
+	xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="example:Package-bee05619-9045-4008-ae86-ac57b8f78b56" version="1.2">
+    <stix:STIX_Header>
+        <stix:Description>UruguayJan-Jun_2o.pps hash indicator</stix:Description>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="example:indicator-ce414f8c-7c6f-4de8-b01d-e03575e8a0ce" timestamp="2016-07-06T17:25:06.591729+00:00" xsi:type='indicator:IndicatorType'>
+            <indicator:Title>UruguayJan-Jun_2o.pps hash indicator</indicator:Title>
+            <indicator:Description>An indicator containing a File observable with an associated hash</indicator:Description>
+            <indicator:Observable id="example:Observable-497584d9-fb7b-47a8-beee-9b3e30e5c8af">
+                <cybox:Object id="example:File-90015716-e76b-47c7-8c62-45a477612c69">
+                    <cybox:Properties xsi:type="FileObj:FileObjectType">
+                        <FileObj:Hashes>
+                            <cyboxCommon:Hash>
+                                <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                <cyboxCommon:Simple_Hash_Value>5f203ea304b97727e6a607c54713da69925337ac1eff98c7761e184c33d37c4d</cyboxCommon:Simple_Hash_Value>
+                            </cyboxCommon:Hash>
+                        </FileObj:Hashes>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Cymmetria Inc.</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2016-07-06T17:25:06.591891+00:00</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+    </stix:Indicators>
+</stix:STIX_Package>
