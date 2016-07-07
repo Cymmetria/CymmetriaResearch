@@ -2,7 +2,6 @@ Indicator Type,File Name,File Hash,IP,URL,Mutex,Description
 IP Address,,,212[.]129.13.110,,,AutoIt script C2
 IP Address,,,212[.]129.7.146,,,IP address used to connect to the cloud decoy with
 IP Address,,,45[.]43.192.172,,,IP address used in the powershell script
-IP Address,,,212[.]83.191.156,,,7zip.exe C2
 IP Address,,,178[.]162.210.242,,,Suspected IOC
 IP Address,,,178[.]162.210.243,,,Suspected IOC
 IP Address,,,178[.]162.210.244,,,Suspected IOC
@@ -60,6 +59,8 @@ File Hash,upsrv.exe,076aa7f5f6a5bdd9acdee55c6e3de54e6e8d5fd6fe2a03c165a23861e315
 File Hash,7zip.exe,9dae4a24095b9a3870579a63c94c73fe8de205c70d95dfdb0dc9c87709215953,,,,
 File Hash,sysvolinfo.exe,f5e4d5d5fde978968dce4db4120ecbb68898d5fdf55860e61058d91db29b7d91,,,,
 File Hash,uplv1032.exe,1da99f69735d203a3d52ff1bb2ede75fe69601259efa6c5a080024ddf9276297,,,,
+File Hash,sysvolinfo.exe variant,13b0f3b63ce276f8d30ac4f95b03485a6fe532754494f9848e875c460b121b28,,,,
+File Hash,UAC Bypasser,607454369fa5d96fab6fec7a52a518eefed5136e4ebd4cfed238ccbb0f5b180f,,,,
 File Hash,13_Five_Year_Plan_2016-20-1.pps,d44793b9584c9ca8a982a05bb6cfc06599e081c411f35f163fbd7eacad5eb584,,,,
 File Hash,aeropower.pps,7dd68cab710cd1e8f099f2d2d8b67d9c3f8cb113c9bb44ea4a08ee76d49ed19c,,,,
 File Hash,australia_fonops_1.pps,04c7f88f284c2466b4814bb02eefb4a02ac118a2d584ba9baec9c7af1fa1de7b,,,,
@@ -140,8 +141,6 @@ File Hash,us_srilanka_relations_2.pps,e01b1267f5c12291dbcbaa04fcd558b8f7415f11df
 File Hash,WILL_ISIS_INFECT_BANGLADESH.pps,75f8073fa5f842a6ca78e27a703a6b0a30ecba3f9f51e23fcf810b2489db5fb5,,,,
 File Hash,zodiac_1.pps,53d6ae6e3f883f1e1ebc9e0b6bdbd8ec8dad344b0988fb4e28b17c19f7385e7e,,,,
 File Hash,zodiac_2.pps,55a5d4f879250dbe57523c7caf7fd55b7324043780dd697e9a8b7061500c8c85,,,,
-URL,,,,http://212[.]83.191.156/http/down.php,,Executable download link used in 7zip.exe
-URL,,,,http://212[.]83.191.156/http/up.php,,Upload file link used in 7zip.exe
 URL,,,,http://212[.]129.13.110/update-request.php?profile=,,Upload file link used in sysvolinfo.exe
 URL,,,,http://212[.]129.13.110/dropper.php?profile=,,C&C url used by sysvolinfo.exe
 URL,,,,http://cnmilit[.]com,,Spear phishing dropper
