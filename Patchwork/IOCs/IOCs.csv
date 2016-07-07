@@ -1,8 +1,61 @@
 Indicator Type,File Name,File Hash,IP,URL,Mutex,Description
-IP Address,,,212.129.13.110,,,AutoIt script C2
-IP Address,,,212.129.7.146,,,IP address used to connect to the cloud decoy with
-IP Address,,,45.43.192.172,,,IP address used in the powershell script
-IP Address,,,212.83.191.156,,,7zip.exe C2
+IP Address,,,212[.]129.13.110,,,AutoIt script C2
+IP Address,,,212[.]129.7.146,,,IP address used to connect to the cloud decoy with
+IP Address,,,45[.]43.192.172,,,IP address used in the powershell script
+IP Address,,,212[.]83.191.156,,,7zip.exe C2
+IP Address,,,178[.]162.210.242,,,Suspected IOC
+IP Address,,,178[.]162.210.243,,,Suspected IOC
+IP Address,,,178[.]162.210.244,,,Suspected IOC
+IP Address,,,178[.]162.210.245,,,Suspected IOC
+IP Address,,,178[.]162.210.246,,,Suspected IOC
+IP Address,,,178[.]162.210.247,,,Suspected IOC
+IP Address,,,178[.]162.210.248,,,Suspected IOC
+IP Address,,,178[.]162.236.40,,,Suspected IOC
+IP Address,,,37[.]48.77.214,,,Suspected IOC
+IP Address,,,37[.]48.77.215,,,Suspected IOC
+IP Address,,,37[.]58.60.195,,,Suspected IOC
+IP Address,,,43[.]249.37.173,,,Suspected IOC
+IP Address,,,46[.]165.225.66,,,Suspected IOC
+IP Address,,,46[.]165.229.7,,,Suspected IOC
+IP Address,,,46[.]165.229.8,,,Suspected IOC
+IP Address,,,46[.]165.229.9,,,Suspected IOC
+IP Address,,,46[.]165.248.236,,,Suspected IOC
+IP Address,,,46[.]165.248.237,,,Suspected IOC
+IP Address,,,46[.]165.248.238,,,Suspected IOC
+IP Address,,,46[.]165.248.239,,,Suspected IOC
+IP Address,,,46[.]165.248.240,,,Suspected IOC
+IP Address,,,46[.]165.248.241,,,Suspected IOC
+IP Address,,,46[.]165.248.243,,,Suspected IOC
+IP Address,,,46[.]166.163.243,,,Suspected IOC
+IP Address,,,46[.]166.163.244,,,Suspected IOC
+IP Address,,,46[.]166.163.246,,,Suspected IOC
+IP Address,,,91[.]229.79.181,,,Suspected IOC
+IP Address,,,91[.]229.79.182,,,Suspected IOC
+IP Address,,,91[.]229.79.183,,,Suspected IOC
+IP Address,,,91[.]229.79.184,,,Suspected IOC
+IP Address,,,91[.]229.79.185,,,Suspected IOC
+IP Address,,,91[.]229.79.186,,,Suspected IOC
+IP Address,,,91[.]229.79.187,,,Suspected IOC
+IP Address,,,91[.]229.79.188,,,Suspected IOC
+IP Address,,,91[.]229.79.189,,,Suspected IOC
+IP Address,,,91[.]229.79.190,,,Suspected IOC
+IP Address,,,93[.]115.95.132,,,Suspected IOC
+IP Address,,,94[.]242.219.203,,,Suspected IOC
+IP Address,,,94[.]242.223.19,,,Suspected IOC
+IP Address,,,94[.]242.223.20,,,Suspected IOC
+IP Address,,,94[.]242.223.24,,,Suspected IOC
+IP Address,,,94[.]242.223.28,,,Suspected IOC
+IP Address,,,94[.]242.231.244,,,Suspected IOC
+IP Address,,,95[.]141.34.242,,,Suspected IOC
+IP Address,,,95[.]141.34.245,,,Suspected IOC
+IP Address,,,95[.]141.34.246,,,Suspected IOC
+IP Address,,,95[.]211.205.142,,,Suspected IOC
+IP Address,,,95[.]211.205.161,,,Suspected IOC
+IP Address,,,95[.]211.205.163,,,Suspected IOC
+IP Address,,,95[.]211.205.164,,,Suspected IOC
+IP Address,,,95[.]211.205.165,,,Suspected IOC
+IP Address,,,95[.]211.205.166,,,Suspected IOC
+IP Address,,,95[.]211.3.135,,,Suspected IOC
 File Hash,upsrv.exe,076aa7f5f6a5bdd9acdee55c6e3de54e6e8d5fd6fe2a03c165a23861e315f3f5,,,,
 File Hash,7zip.exe,9dae4a24095b9a3870579a63c94c73fe8de205c70d95dfdb0dc9c87709215953,,,,
 File Hash,sysvolinfo.exe,f5e4d5d5fde978968dce4db4120ecbb68898d5fdf55860e61058d91db29b7d91,,,,
@@ -87,10 +140,66 @@ File Hash,us_srilanka_relations_2.pps,e01b1267f5c12291dbcbaa04fcd558b8f7415f11df
 File Hash,WILL_ISIS_INFECT_BANGLADESH.pps,75f8073fa5f842a6ca78e27a703a6b0a30ecba3f9f51e23fcf810b2489db5fb5,,,,
 File Hash,zodiac_1.pps,53d6ae6e3f883f1e1ebc9e0b6bdbd8ec8dad344b0988fb4e28b17c19f7385e7e,,,,
 File Hash,zodiac_2.pps,55a5d4f879250dbe57523c7caf7fd55b7324043780dd697e9a8b7061500c8c85,,,,
-URL,,,,http://212.83.191.156/http/down.php,,Executable download link used in 7zip.exe
-URL,,,,http://212.83.191.156/http/up.php,,Upload file link used in 7zip.exe
-URL,,,,http://212.129.13.110/update-request.php?profile=,,Upload file link used in sysvolinfo.exe
-URL,,,,http://212.129.13.110/dropper.php?profile=,,C&C url used by sysvolinfo.exe
-URL,,,,http://cnmilit.com,,Spear phishing dropper
-URL,,,,http://t.ymlp50.com/jmyafaejshbafahshaaambmus/click.php,,Spear phishing dropper
+URL,,,,http://212[.]83.191.156/http/down.php,,Executable download link used in 7zip.exe
+URL,,,,http://212[.]83.191.156/http/up.php,,Upload file link used in 7zip.exe
+URL,,,,http://212[.]129.13.110/update-request.php?profile=,,Upload file link used in sysvolinfo.exe
+URL,,,,http://212[.]129.13.110/dropper.php?profile=,,C&C url used by sysvolinfo.exe
+URL,,,,http://cnmilit[.]com,,Spear phishing dropper
+URL,,,,http://t.ymlp50[.]com/jmyafaejshbafahshaaambmus/click.php,,Spear phishing dropper
+URL,,,,mozarting[.]com,,Suspected IOC
+URL,,,,blingblingg[.]com,,Suspected IOC
+URL,,,,aaskmee[.]com,,Suspected IOC
+URL,,,,revoltmax[.]com,,Suspected IOC
+URL,,,,eyescreem[.]com,,Suspected IOC
+URL,,,,outlookkz[.]com,,Suspected IOC
+URL,,,,xmachinez[.]com,,Suspected IOC
+URL,,,,pizzahomez[.]com,,Suspected IOC
+URL,,,,newsnstat[.]com,,Suspected IOC
+URL,,,,163-cn[.]org,,Suspected IOC
+URL,,,,cnmilit[.]com,,Suspected IOC
+URL,,,,81-cn[.]net,,Suspected IOC
+URL,,,,climaxcn[.]com,,Suspected IOC
+URL,,,,expatchina[.]info,,Suspected IOC
+URL,,,,miltechweb[.]com,,Suspected IOC
+URL,,,,nduformation[.]com,,Suspected IOC
+URL,,,,securematrixx[.]com,,Suspected IOC
+URL,,,,xbladezz[.]com,,Suspected IOC
+URL,,,,asiandefnetwork[.]com,,Suspected IOC
+URL,,,,dailychina[.]news,,Suspected IOC
+URL,,,,sinodefprog[.]info,,Suspected IOC
+URL,,,,qqgroups[.]info,,Suspected IOC
+URL,,,,chinastrat[.]com,,Suspected IOC
+URL,,,,miltechcn[.]com,,Suspected IOC
+URL,,,,numeronez[.]com,,Suspected IOC
+URL,,,,telemediaz[.]com,,Suspected IOC
+URL,,,,majidalfuttaiim[.]com,,Suspected IOC
+URL,,,,webworldreq[.]com,,Suspected IOC
+URL,,,,nextraload[.]com,,Suspected IOC
+URL,,,,junshiyuehui[.]com,,Suspected IOC
+URL,,,,cndailynetwork[.]info,,Suspected IOC
+URL,,,,extrememachine[.]org,,Suspected IOC
+URL,,,,wikifedia[.]space,,Suspected IOC
+URL,,,,yue-lao[.]info,,Suspected IOC
+URL,,,,you-yisi[.]com,,Suspected IOC
+URL,,,,annchenn[.]com,,Suspected IOC
+URL,,,,office-rb-support[.]com,,Suspected IOC
+URL,,,,greatdexter[.]com,,Suspected IOC
+URL,,,,haiwaipengyou[.]com,,Suspected IOC
+URL,,,,extremerebolt[.]com,,Suspected IOC
+URL,,,,matrixrevolt[.]com,,Suspected IOC
+URL,,,,info81[.]com,,Suspected IOC
+URL,,,,chinastrats[.]com,,Suspected IOC
+URL,,,,epg-cn[.]com,,Suspected IOC
+URL,,,,nutcn[.]com,,Suspected IOC
+URL,,,,modgovcn[.]com,,Suspected IOC
+URL,,,,climaxcn[.]com,,Suspected IOC
+URL,,,,socialfreakzz[.]com,,Suspected IOC
+URL,,,,militaryworkerscn[.]com,,Suspected IOC
+URL,,,,extremebolt[.]com,,Suspected IOC
+URL,,,,lujunxinxi[.]com,,Suspected IOC
+URL,,,,letsgetclose[.]com,,Suspected IOC
+URL,,,,milresearchcn[.]com,,Suspected IOC
+URL,,,,alfred.ignorelist[.]com,,Suspected IOC
+URL,,,,symantecz[.]com,,Suspected IOC
+URL,,,,nudtcn[.]com,,Suspected IOC
 Mutex,,,,,{9754893678976458374658764387563876},Mutex used in 7zip.exe
