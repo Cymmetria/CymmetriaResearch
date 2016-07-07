@@ -2,5 +2,5 @@
 
 APT report released on 07/07/16
 
-IOC/ - IOC files
+IOCs/ - IOCs files
 Campaign/ - Cymmetria's MazeRunner campaign files
