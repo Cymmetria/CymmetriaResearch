@@ -1,23 +1,23 @@
 <stix:STIX_Package 
+	xmlns:Cymmetria="http://cymmetria.com"
 	xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2"
 	xmlns:cybox="http://cybox.mitre.org/cybox-2"
 	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
 	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
-	xmlns:example="http://example.com"
 	xmlns:indicator="http://stix.mitre.org/Indicator-2"
 	xmlns:stix="http://stix.mitre.org/stix-1"
 	xmlns:stixCommon="http://stix.mitre.org/common-1"
 	xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="example:Package-b4a920d7-873f-4de0-90d1-16cbb300d8b2" version="1.2">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Cymmetria:Package-1a29bda5-ba72-4e7c-9dc8-3a60f959af17" version="1.2">
     <stix:STIX_Header>
         <stix:Description>uruguayjul-dec_1.pps hash indicator</stix:Description>
     </stix:STIX_Header>
     <stix:Indicators>
-        <stix:Indicator id="example:indicator-f8f9bf68-1398-434f-8624-306d2dbf1ea2" timestamp="2016-07-06T17:25:06.597620+00:00" xsi:type='indicator:IndicatorType'>
+        <stix:Indicator id="Cymmetria:indicator-c3a69825-2f20-409f-8f65-a5c0ec2cb9f7" timestamp="2016-07-14T09:44:00.860697+00:00" xsi:type='indicator:IndicatorType'>
             <indicator:Title>uruguayjul-dec_1.pps hash indicator</indicator:Title>
             <indicator:Description>An indicator containing a File observable with an associated hash</indicator:Description>
-            <indicator:Observable id="example:Observable-20dae9be-3504-4b25-9f6f-64dfcb2446f2">
-                <cybox:Object id="example:File-b83ed96c-fab2-46e1-8a46-12ac5ed455f8">
+            <indicator:Observable id="Cymmetria:Observable-6cf4d440-b87e-4846-a898-2f72e93076c7">
+                <cybox:Object id="Cymmetria:File-baa7b97f-0d6e-4d32-a3f7-98d657c0f08a">
                     <cybox:Properties xsi:type="FileObj:FileObjectType">
                         <FileObj:Hashes>
                             <cyboxCommon:Hash>
@@ -33,7 +33,7 @@
                     <stixCommon:Name>Cymmetria Inc.</stixCommon:Name>
                 </stixCommon:Identity>
                 <stixCommon:Time>
-                    <cyboxCommon:Produced_Time>2016-07-06T17:25:06.597914+00:00</cyboxCommon:Produced_Time>
+                    <cyboxCommon:Produced_Time>2016-07-14T09:44:00.860835+00:00</cyboxCommon:Produced_Time>
                 </stixCommon:Time>
             </indicator:Producer>
         </stix:Indicator>
