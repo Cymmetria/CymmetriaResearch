@@ -1,3 +1,14 @@
+###
+# MTPot is a simple open source honeypot, released under the MIT license for the use of the community.
+#
+# Cymmetria Research, 2016.
+# http://www.cymmetria.com/
+#
+# Please consider trying out the MazeRunner Community Edition, the free version of our cyber deception platform.
+#
+# Written by: Itamar Sher (@itamar_sher), Dean Sysman (@DeanSysman), Imri Goldberg (@lorgandon)
+# Contact: research@cymmetria.com
+###
 import json
 
 MANDATORY_FIELDS = ["port", "commands", "ddos_name", "ip"]
