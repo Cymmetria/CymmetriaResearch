@@ -11,6 +11,7 @@ from syslog_logger import get_syslog_logger
 COMMANDS = {}
 COMMANDS_EXECUTED = {}
 BUSY_BOX = "/bin/busybox"
+MIRAI_SCANNER_COMMANDS = ["shell", "sh", "enable"]
 FINGERPRINTED_IPS = []
 
 logging.basicConfig(level=logging.INFO,\
@@ -24,6 +25,10 @@ class MyTelnetHandler(TelnetHandler):
     PROMPT = ">"
     authNeedUser = True
     authNeedPass = True
+
+    @command(MIRAI_SCANNER_COMMANDS)
+    def shell_respond(self, params):
+        self.writeresponse("")
 
     @command([BUSY_BOX])
     def handle_busybox(self, params):
