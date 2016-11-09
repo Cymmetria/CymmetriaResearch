@@ -24,5 +24,5 @@ syslog_port - OPTIONAL, Syslog PORT.
 syslog_protocol - OPTIONAL, Protocol used by the syslog (TCP/UDP)
 
 
-A sample config file is included (mirai_conf.json) that fingerprints the open source mirai tools released here: https://github.com/jgamblin/Mirai-Source-Code
+A sample config files are included (mirai_conf.json, mirai_scanner_conf.json) that fingerprint the open source mirai tools released here: https://github.com/jgamblin/Mirai-Source-Code
 
