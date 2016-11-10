@@ -64,5 +64,6 @@ def get_syslog_logger(syslog_address, syslog_port, sock_type):
     else:
         raise InvalidSyslogSocktype("Invalid socktype={} (TCP/UDP)".format(sock_type))
     syslogger = logging.getLogger("HoneySyslog")
+    syslogger.setLevel(logging.INFO)
     syslogger.addHandler(syslog_handler)
     return syslogger

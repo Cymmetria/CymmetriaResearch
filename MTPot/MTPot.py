@@ -38,7 +38,7 @@ class MyTelnetHandler(TelnetHandler):
 
     def is_fingerprinted(self):
         if all([COMMANDS_EXECUTED[self.client_address[0]].count(cmd) > 0 for cmd in COMMANDS]):
-            honey_logger.info("%s fingerprinted %s", config.ddos_name, self.client_address[0])
+            honey_logger.info("%s: confirmed IP: %s", config.ddos_name, self.client_address[0])
             if syslogger:
                 syslogger.info("%s: confirmed IP: %s", config.ddos_name, self.client_address[0])
             FINGERPRINTED_IPS.append(self.client_address[0])
@@ -47,6 +47,9 @@ class MyTelnetHandler(TelnetHandler):
             return False
 
     def store_command(self, cmd):
+        honey_logger.debug("%s executed: %s", self.client_address[0], cmd)
+        if syslogger:
+            syslogger.debug("%s executed: %s", self.client_address[0], cmd)
         if self.client_address[0] in FINGERPRINTED_IPS:
             return
         if not COMMANDS_EXECUTED.has_key(self.client_address[0]):
@@ -59,14 +62,12 @@ class MyTelnetHandler(TelnetHandler):
     def get_busybox_response(self, params):
         response = ""
         full_command = " ".join(params)
-        honey_logger.debug("Got full line: %s", full_command)
         for cmd in full_command.split(";"):
             cmd = cmd.strip()
             # Check for busy box executable
             if cmd.startswith(BUSY_BOX):
                 cmd = cmd.replace(BUSY_BOX, "")
                 cmd = cmd.strip()
-            honey_logger.debug("Handling command: %s", cmd)
             response += COMMANDS.get(cmd, "") + "\n"
             self.store_command(cmd)
         return response
@@ -96,6 +97,12 @@ def get_args():
         'config',
         type=str,
         help='Path to a json config file, see README for all available parameters')
+    parser.add_argument(
+        '-v',
+        '--verbose',
+        action='store_true',
+        required=False,
+        help='Increase MTPot verbosity')
     return parser.parse_args()
 
 
@@ -106,8 +113,12 @@ def main():
 
     args = get_args()
     config = HoneyConfig(args.config)
+    if args.verbose:
+        honey_logger.setLevel(logging.DEBUG)
     try:
         syslogger = get_syslog_logger(config.syslog_address, config.syslog_port, config.syslog_protocol)
+        if args.verbose:
+            syslogger.setLevel(logging.DEBUG)
         honey_logger.info(
             "Setup syslog with parameters: IP:%s, PORT:%d, PROTOCOL:%s",
             config.syslog_address,
