@@ -20,10 +20,17 @@ pip install gevent
 
 Usage
 -------
-MTPot.py [-h] config
+usage: MTPot.py [-h] [-v] config
 
-config - Path to a JSON config file.
-Available keys:
+positional arguments:
+  config         Path to a json config file, see README for all available
+                 parameters
+
+optional arguments:
+  -h, --help     show this help message and exit
+  -v, --verbose  Increase MTPot verbosity
+
+config file keys:
 port - REQUIRED, The port MTPot will bind to.
 commands - REQUIRED, A python dict containing the commands expected to receive from the scanner (Mirai e.g.) as the keys and the responses as values. IMPORTANT: at the moment commands are assumed to be run under /bin/busybox. (e.g. command="ps" means that the command that would actually get handled is "/bin/busybox ps")
 ddos_name - REQUIRED, The name of the attack (Mirai e.g.) that will appear whenever a successful fingerprint has occured
