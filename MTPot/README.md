@@ -30,14 +30,15 @@ optional arguments:
   -h, --help     show this help message and exit
   -v, --verbose  Increase MTPot verbosity
 
-config file keys:
-port - REQUIRED, The port MTPot will bind to.
-commands - REQUIRED, A python dict containing the commands expected to receive from the scanner (Mirai e.g.) as the keys and the responses as values. IMPORTANT: at the moment commands are assumed to be run under /bin/busybox. (e.g. command="ps" means that the command that would actually get handled is "/bin/busybox ps")
-ddos_name - REQUIRED, The name of the attack (Mirai e.g.) that will appear whenever a successful fingerprint has occured
-ip - REQUIRED, The IP address MTPot will bind to.
-syslog_address - OPTIONAL, Syslog IP address to send the fingerprinted IPs to.
-syslog_port - OPTIONAL, Syslog PORT.
-syslog_protocol - OPTIONAL, Protocol used by the syslog (TCP/UDP)
+Config file keys
+-------
+* port - REQUIRED, The port MTPot will bind to.
+* commands - REQUIRED, A python dict containing the commands expected to receive from the scanner (Mirai e.g.) as the keys and the responses as values. IMPORTANT: at the moment commands are assumed to be run under /bin/busybox. (e.g. command="ps" means that the command that would actually get handled is "/bin/busybox ps")
+* ddos_name - REQUIRED, The name of the attack (Mirai e.g.) that will appear whenever a successful fingerprint has occured
+* ip - REQUIRED, The IP address MTPot will bind to.
+* syslog_address - OPTIONAL, Syslog IP address to send the fingerprinted IPs to.
+* syslog_port - OPTIONAL, Syslog PORT.
+* syslog_protocol - OPTIONAL, Protocol used by the syslog (TCP/UDP)
 
 
 Also included are sample config files (mirai_conf.json, mirai_scanner_conf.json) built for fingerprinting mirai based on the code available from: https://github.com/jgamblin/Mirai-Source-Code
