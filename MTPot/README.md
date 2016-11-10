@@ -3,11 +3,13 @@
 MTPot is a simple open source honeypot, released under the MIT license for the use of the community.
 
 Cymmetria Research, 2016.
+
 http://www.cymmetria.com/
 
 Please consider trying out the MazeRunner Community Edition, the free version of our cyber deception platform.
 
 Written by: Itamar Sher (@itamar_sher), Dean Sysman (@DeanSysman), Imri Goldberg (@lorgandon)
+
 Contact: research@cymmetria.com
 
 
@@ -23,10 +25,12 @@ Usage
 usage: MTPot.py [-h] [-v] config
 
 positional arguments:
+
   config         Path to a json config file, see README for all available
                  parameters
 
 optional arguments:
+
   -h, --help     show this help message and exit
   -v, --verbose  Increase MTPot verbosity
 
@@ -42,3 +46,10 @@ Config file keys
 
 
 Also included are sample config files (mirai_conf.json, mirai_scanner_conf.json) built for fingerprinting mirai based on the code available from: https://github.com/jgamblin/Mirai-Source-Code
+
+Important note on sample downloading
+-------
+We had to stop debugging mirai at some point. An issue left open is that the remote mirai infector crashes when it receives an expected response to one of its commands.
+
+
+We did not have the time to work on this last issue (which apparently some folks see as a feature), but happy to get the help of the community if anyone wants to take a stab at making that aspect of the honeypot work.
