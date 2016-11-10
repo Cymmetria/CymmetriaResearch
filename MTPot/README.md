@@ -13,9 +13,9 @@ Contact: research@cymmetria.com
 
 Install
 -------
-Python 2.7
-pip install telnetsrv
-pip install gevent
+* Python 2.7
+* pip install telnetsrv
+* pip install gevent
 
 
 Usage
